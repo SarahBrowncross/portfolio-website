@@ -3,7 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<title>Sarah Browncross Portfolio</title>
 </head>
@@ -22,8 +24,10 @@
 		<hr class="divider">
 		<div id="design-div">
 			<h2>Design work</h2>
-			<div class="project-div">
-				<img class="project-pic" src="images/Wonderlab.jpg" alt="gallery with exhibits" />
+			<div class="project-div" data-aos="zoom-out">
+				<div>
+					<img class="project-pic" src="images/Wonderlab.jpg" alt="gallery with exhibits" />
+				</div>
 				<div class="project-text">
 					<h3>Wonderlab</h3>
 					<p>Content designer for £1.8 million Wonderlab - an award-nominated interactive gallery and learning
@@ -34,7 +38,7 @@
 					<button class="more-button">more</button>
 				</div>
 			</div>
-			<div class="project-div">
+			<div class="project-div" data-aos="zoom-out">
 				<img class="project-pic" src="images/soyuz.jpg" alt="spacecraft with astronaut" />
 				<div class="project-text">
 					<h3>Mission: Space</h3>
@@ -45,8 +49,8 @@
 					<button class="more-button">more</button>
 				</div>
 			</div>
-			<div class="project-div">
-				<div class="project-pic"></div>
+			<div class="project-div" data-aos="zoom-out">
+				<div id="fake-pic"></div>
 				<div class="project-text">
 					<h3>Other design work</h3>
 					<ul>
@@ -62,7 +66,7 @@
 		<hr class="divider">
 		<div id="tech-div">
 			<h2>Tech work</h2>
-			<div class="project-div">
+			<div class="project-div" data-aos="zoom-out">
 				<img class="project-pic" src="images/nc-news.jpg" alt="code on a screen" />
 				<div class="project-text">
 					<h3>NC News</h3>
@@ -74,7 +78,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="project-div">
+			<div class="project-div" data-aos="zoom-out">
 				<img class="project-pic" src="images/odin-project.JPG" alt="a graphic of a temple" />
 				<div class="project-text">
 					<h3>Odin Project</h3>
@@ -91,7 +95,7 @@
 		<hr class="divider">
 		<div id="presentation-div">
 			<h2>Presentation and Training work</h2>
-			<div class="project-div">
+			<div class="project-div" data-aos="zoom-out">
 				<img class="project-pic" src="images/presentation.jpg"
 					alt="a woman presenting to a crowd of children" />
 				<div class="project-text">
@@ -106,22 +110,27 @@
 					</ul>
 				</div>
 			</div>
-			<div class="project-div">
-				
+			<div class="project-div" data-aos="zoom-out">
+
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/5Xb49h7tT60" frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
 				<div class="project-text">
 					<h3>Video work</h3>
-					<p>My engaging style has meant that I've often been the first choice for video work and TV interviews. Here's an example of the kind of work I've done</p>
+					<p>My engaging style has meant that I've often been the first choice for video work and TV
+						interviews. Here's an example of the kind of work I've done</p>
 				</div>
 			</div>
 		</div>
 
 
 	</div>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	  </script>
 </body>
 
-<script src="script.js"></script>
+
 
 </html>
